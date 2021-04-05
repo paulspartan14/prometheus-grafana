@@ -22,5 +22,8 @@ search: node exporter grafana dashboards
 
 and watch 'Get this dashboard'
 
-example: 893
-example2: 1860
+example (docker containers failed): 893
+
+
+example1 (docker): 11600
+example2 (node-exporter): 1860
