@@ -37,7 +37,6 @@ services:
     links:
       - node-exporter:node-exporter
       - cadvisor:cadvisor
-      - prometheus:prometheus
 
   # database for analytics & monitoring solution
   grafana:
