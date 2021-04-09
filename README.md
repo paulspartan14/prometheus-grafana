@@ -27,3 +27,21 @@ example (docker containers failed): 893
 
 example1 (docker): 11600
 example2 (node-exporter): 1860
+
+
+
+### Si tiene problemas con las metricas de CAdvisor y muestra 0 configure lo siguiente:
+
+Agregar una configuracion al grupo de arranque
+
+`nano /etc/default/grub`
+
+editar la siguiente linea y agregar el siguiente contenido
+
+```
+GRUB_CMDLINE_LINUX_DEFAULT="cgroup_enable=memory swapaccount=1"
+```
+
+luego aplicar el grupo y reiniciar
+
+`update-grub && reboot`
